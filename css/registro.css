@@ -1,0 +1,129 @@
+*
+{
+	box-sizing: border-box;
+}
+
+input[class="info"]
+{
+	margin-top: 5px;
+	padding: 1.5px 4px;
+	border-radius: 3px;
+	outline: none;
+}
+input[class="info tam"]
+{
+	width: 40%;
+}
+input[type="button"]
+{
+	margin-top: 5px;
+	background-color: #0297c0;
+	color:white;
+	outline: none;
+	padding: 2.5px 10px;
+	border-radius: 5px;
+}
+div.marco_ppal
+{
+	max-width: 1000px;
+	width: 90%;
+	margin:0 auto;
+}
+div#opcion
+{
+	width: 310px;
+	margin:0 auto;
+}
+div.marcos
+{
+	display: none;
+	max-width: 700px;
+	width: 90%;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	min-width: 300px;
+	background-color: #ffffffb8;
+    box-shadow: 0 0 2px black;
+    padding: 6px;
+}
+
+textarea.masDatos
+{
+	display: none;
+}
+
+textarea#oferta
+{
+	width: 100%;
+	height: 300px;
+	border:solid 1px gray;
+	outline: none;	
+}
+
+p.nota
+{
+	margin: 0;
+	padding: 0;
+}
+
+img#user-img,
+img#user-img1
+{
+	max-width: 200px;
+	margin: 20px 15px;
+	display: block;
+}
+#user-img-file,
+#user-img-file1
+{
+	display: none;
+}
+
+label#lbl_img
+{
+	cursor: pointer;
+}
+
+ul
+{
+	padding: 0;
+	margin: 0;
+	list-style-type: none;	
+}
+
+ul li label
+{
+	padding: 1.5px 4px;
+	display: inline-block;	
+}
+
+fieldset
+{
+	margin-bottom: 15px;
+}
+
+fieldset#d_pers ul
+{
+	margin-top: 20px;
+	width: 300px;
+	text-align: right;
+}
+
+fieldset#experiencia ul
+{
+	max-width: 500px;
+	min-width: 292px;
+}
+
+a#ini
+{
+	text-decoration-line: none;
+	color:lightblue;
+}
+
+select#seleccionar
+{
+	padding: 3px 10px;
+}
+
+ 

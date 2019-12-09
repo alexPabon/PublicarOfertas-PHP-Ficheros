@@ -1,0 +1,70 @@
+header
+{
+    width: 100%;
+    padding: 15px 20px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    align-items: center;
+    margin-bottom: 20px;            
+    border-bottom: solid 3px gray;
+}
+
+img.imgEmpresa
+{
+    height: 13vw;
+    min-height: 100px;
+    display: block;
+    border-radius: 8px;
+}
+
+div#imagen
+{
+    max-width: 300px;
+    width: 25%;
+    height: 35vh;
+    max-height: 200px;
+    border: solid;
+    border-radius: 10px;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+ul
+{
+    padding: 10px 30px;
+    background-color: #7d7f9e;
+    margin: 0;
+    list-style-type: none;
+    border-radius: 15px;
+}
+
+textarea
+{
+    width: 100%;
+    height: 50vh;
+}
+
+input[type="text"]
+{
+    width: 40%;
+    padding: 5px 15px;
+    border-radius: 5px 10px 0 0;    
+}
+
+input[type="button"]
+{
+    padding: 5px 15px;
+    margin: 10px 0;
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+}
+
+label
+{
+    font-size: 25px;    
+}

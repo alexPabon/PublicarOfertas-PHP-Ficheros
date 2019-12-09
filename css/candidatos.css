@@ -1,0 +1,31 @@
+header
+{
+	margin-bottom: 20px;
+	border-bottom: solid 3px gray;	
+}
+
+header h2
+{
+	text-align: center;
+}
+
+header p
+{
+	text-align: justify;
+	padding-left: 20px;
+}
+
+p.puestos
+{
+	border:solid 2px gray;
+	border-radius: 10px;
+	padding: 10px;
+	margin-bottom: 15px;
+	background-color: #ffffffab;
+}
+
+p.puestos:hover
+{
+	background-color: white;
+	box-shadow: inset 1px -3px 5px black;
+}

@@ -1,0 +1,80 @@
+body
+{
+	background-color: initial;	
+}
+
+div#marco_gral
+{
+	max-width: 1080px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-bottom: 50px;
+    box-shadow: 0 0 6px black;
+    border-radius: 10px;
+}
+
+div.cabecera
+{
+	text-align: center;
+}
+
+div.marco
+{
+	border-top: solid 3px;
+    border-bottom: solid 4px;
+    border-color: rgb(75, 116, 158);
+}
+
+div#foto
+{
+	margin: 0 auto;
+	margin-top: 15px;
+    max-width: 300px;
+    max-height: 300px;
+    min-width: 170px;
+    min-height: 170px;
+    width: 30%;
+    height: 20vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+div.pos_left
+{
+	float: left;
+    width: 50%;
+}
+
+div.pos_right
+{
+	float: right;
+	width: 50%;
+}
+
+div.marco:after
+{
+	display: block;
+	content: "";
+	clear: both;
+}
+
+h4
+{
+	font-size: 25px;
+}
+
+@media only screen and (max-width: 600px) {
+  body
+  {
+    background-color: #f5fafb7d;
+  }
+  
+  #datos,
+  #datos1
+	{	   
+	    float: none;
+    	width: 100%;
+	}
+}

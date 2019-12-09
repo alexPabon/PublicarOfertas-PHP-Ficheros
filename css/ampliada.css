@@ -1,0 +1,94 @@
+body
+{
+	padding-top: 69px;
+}
+
+div.marco_oferta
+{
+	border:solid 2px gray;
+	border-radius: 10px;
+	padding: 10px;
+	margin-bottom: 15px;
+	background-color: #ffffffab;
+}
+
+div.marco_oferta:hover
+{
+	background-color: white;
+	box-shadow: inset 1px -3px 5px black;
+}
+
+div.contenido
+{
+	height: 50px;
+	overflow: hidden;
+	cursor: pointer;
+	border-radius: 10px;
+	border:solid 1px white;
+	padding: 0 10px;
+}
+
+div.contenido:hover{
+	border-color: lightgrey;
+}
+
+div.mostrar
+{
+	height: auto;
+	overflow: visible;	
+	padding: 10px;
+	background: white;	
+}
+
+div.on
+{
+	background: linear-gradient(180deg, rgba(247,251,246,1) 18%, rgba(217,219,230,1) 63%, rgba(45,58,147,1) 95%);
+}
+
+img.imgEmpresa
+{
+	height: 8vw;
+    min-height: 100px;
+    display: block;
+    border-radius: 8px;
+}
+
+header
+{
+	width: 100%;
+	padding: 15px 20px;
+	display: inline-flex;
+	flex-wrap: wrap;
+	justify-content: space-between;	
+	align-items: center;
+	margin-bottom: 20px;
+	border-radius: 0 0 10px 10px;
+	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 49%, rgba(9,9,121,1) 83%);
+	color: white;
+}
+
+h1
+{
+	padding: 0;
+	margin: 0;
+}
+
+input[type="submit"]
+{
+	background-color: lightgrey;
+	padding: 5px 15px;
+	margin:5px 0;
+	border-radius: 10px;
+}
+
+input[type="submit"]:hover{
+	background-color: #f0f2f5;
+}
+
+p.inscrito
+{
+	background-color: white;
+	display: inline-block;
+	padding: 5px 25px;
+	border-radius: 50%;
+}
