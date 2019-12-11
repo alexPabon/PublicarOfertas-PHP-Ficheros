@@ -1,9 +1,8 @@
-*
-{
+*{
 	box-sizing: border-box;
 }
-body
-{
+
+body{
 	margin: 0;	
 	padding-top: 145px;
 	width: 100%;
@@ -11,8 +10,7 @@ body
 	background: rgba(242, 245, 242, 0.28);
 }
 
-nav
-{
+nav{
 	background: rgb(2,0,36);
 	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 49%, rgba(9,9,121,1) 83%);
 	color: white;
@@ -25,15 +23,13 @@ nav
 
 
 
-div.marco_ppal
-{
+div.marco_ppal{
 	max-width: 1080px;
 	margin: 0 auto;
 	width: 90%;	
 }
 
-div.reducida
-{
+div.reducida{
 	border-radius: 0 15px;
 	border:solid 1px lightgrey;
 	margin-bottom: 10px;
@@ -41,76 +37,64 @@ div.reducida
 	background: #ffffffbf;
 }
 
-div.reducida:hover
-{
-	box-shadow: inset 1px -3px 5px black;
-	background: white;	
-}
-
-div.user-items
-{	
+div.user-items{	
 	float: right;
 	right: 0;	
 }
 
-div.user-items a
-{
+div.user-items a{
 	display: inline-block;	
 }
 
-nav:after
-{
+nav:after{
 	display: block;
 	content: "";
 	clear: both;
 }
 
-nav a
-{
+nav a{
 	color: white;
 	text-decoration-line: none;
 	cursor: pointer;
-	font-size: 20px;	
+	font-size: 20px;
+	border:solid 1px #00000036;	
+	border-radius: 5px;
+	padding: 0 10px;
 }
 
-nav div a:nth-child(2)
-{
+nav div a:nth-child(2){
 	margin-right: 1.7vw;
 }
-nav div a:nth-child(3)
-{
+
+nav div a:nth-child(3){
 	margin-right: 1.7vw;
 }
-nav div p
-{
+
+nav div p{
 	margin: 0;
 	margin-right: 15px;
 	margin-bottom: 10px;
 	padding: 0;
 }
 
-div.marco_ppal a
-{
+div.marco_ppal a{
 	color: black;
 	text-decoration-line: none;
 }
 
-img.img_perfil0
-{
+img.img_perfil0{
 	max-height: 55px;
 	margin-right: 1.5vw;
 	border-radius: 3px;
 }
 
-img.img_perfil
-{
+img.img_perfil{
 	max-height: 45px;
 	margin-left: 3vw;
 	border-radius: 5px;
 }
 
-img.img_perfil1
-{
+img.img_perfil1{
 	max-height: 25px;
 	margin-right: 7px;
 	border-radius: 5px;
@@ -118,8 +102,16 @@ img.img_perfil1
 
 p.n_usu,
 p.fecha,
-h3.empresa
-{
+h3.empresa{
 	margin-top: 0;
     margin-bottom: 3px;
+}
+
+div.reducida:hover{
+	box-shadow: inset 1px -3px 5px black;
+	background: white;	
+}
+
+nav a:hover{
+	border-color: #00dcff;	
 }

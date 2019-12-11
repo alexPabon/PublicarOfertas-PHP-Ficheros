@@ -2,13 +2,9 @@
 	session_start();
 	$refrescar = false;
 	if(isset($_SESSION["user_log"]))
-	{
 		header("Location: index.php");
-	}
 	else
-	{
 		if($refrescar){header("Refresh:0");}
-	}
 ?>
 <!DOCTYPE html>
 <html>

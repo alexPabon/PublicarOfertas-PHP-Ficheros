@@ -1,9 +1,7 @@
 <?php
 	session_start();
 	if(!isset($_SESSION["user_log"]))
-	{
 		header("Location: index.php");
-	}
 ?>
 <!DOCTYPE html>
 <html>

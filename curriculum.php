@@ -2,22 +2,17 @@
 	session_start();
 
 	if($_SESSION["datos"][1]!=1)
-	{
 		header("location: index.php");
-	}
 	
 	$persona = $_GET["id"];
-
 	$usuarios = fopen("files/personas.txt", "r");
 	$informacionUsuario = [];
 
-	while (!feof($usuarios))
-	{
+	while (!feof($usuarios)){
 		$line = trim(fgets($usuarios));
 		$datos = explode("|", $line);
 
-		if($datos[0]==$persona)
-		{
+		if($datos[0]==$persona){
 			$informacionUsuario = $datos;
 			break;
 		}
@@ -41,7 +36,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title><?php echo $nombreApell; ?></title>
+	<title><?= $nombreApell; ?></title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/common.css">
@@ -52,46 +47,38 @@
 	<div id="marco_gral">
 		<div class="cabecera">
 			<h1>Curriculum Vitae</h1>
-			<h3><?php echo strtoupper($nombreApell); ?></h3>
+			<h3><?= strtoupper($nombreApell); ?></h3>
 		</div>
 		<div class="marco">
 			<div id="datos" class="pos_left">				
-				<div id="foto" style="background-image: url(<?php echo $imagenP; ?>);"></div>
+				<div id="foto" style="background-image: url(<?= $imagenP; ?>);"></div>
 				<p id="datosPers" class="informacion">
-					<a href="mailto:<?php echo $correo; ?>"><?php echo $correo."<br>"; ?></a>
+					Email: <a href="mailto:<?php echo $correo; ?>"><?= $correo."<br>"; ?></a>
 					<?php						
-						echo "Tl: ".$tel."<br>";
-						echo $documento."<br>";
-						echo $estado."<br><br>";
-						echo $direccion."<br>";
-						echo $ciudad."<br><br>";
+						echo "Tel: ".$tel."<br>";
+						echo "DNI: ".$documento."<br>";
+						echo "Estado civil: ".$estado."<br><br>";
+						echo "Direccion: ".$direccion."<br>";
+						echo "Ciudad: ".$ciudad;
 					?>					
 				</p>
 				<div class="marcoInfo">
 					<h4>Aficiones</h4>
-					<p>				
-						<?php echo $aficiones; ?>
-					</p>
+					<p><?= $aficiones; ?></p>
 				</div>
 			</div>
 			<div id="datos1" class="pos_right">
 				<div class="marcoInfo">
 					<h4>Eperiencia</h4>
-					<p>				
-						<?php echo $experiencia; ?>
-					</p>
+					<p><?= $experiencia; ?></p>
 				</div>
 				<div class="marcoInfo">
 					<h4>Idiomas</h4>
-					<p>				
-						<?php echo $idiomas; ?>
-					</p>
+					<p><?= $idiomas; ?></p>
 				</div>
 				<div class="marcoInfo">
 					<h4>Mis Enlaces</h4>
-					<p>				
-						<?php echo $enlaces; ?>
-					</p>
+					<p><?= $enlaces; ?></p>
 				</div>
 			</div>	
 		</div>			
