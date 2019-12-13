@@ -14,3 +14,5 @@
 14|1|Jefe de Cocina|1576061937|"fasdlkf\r\nsdfa\r\n\r\nfdasf\r\n\r\n\r\ndsfasdf\r\nfasdf"|
 15|1|Repartidor|1576061944|"vxczvzx"|
 16|1|Repartidor|1576061959|"vxczvzx"|
+17|4|Jefe de Cocina|1576081948|"Restaurante de referencia en barcelona centro precisa COCINERXS PROFESIONALES Y VOCACIONALES con EXPERIENCIA 2-3 a\u00f1os ROTANDO TODAS LAS PARTIDAS, COCINA MEDITERR\u00c1NEA y trabajando bajo presi\u00f3n. \u00bfQu\u00e9 ofrecemos? 1850br + BOTE+ TURNO PARTIDO + 2 D\u00cdAS DESCANSO SEGUIDO. Incorporaci\u00f3n inmediata."|
+18|5|Repartidor en furgoneta|1576083080|"asdfas\r\nfasdf\r\nasdfasd\r\n\r\n\r\nfdasfasdfa"|

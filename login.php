@@ -1,8 +1,34 @@
 <?php
 	session_start();
 	if(isset($_SESSION["user_log"]))
-	{
 		header("Location: index.php");
+
+	$errorLogin = "";
+
+	if($_POST)
+	{
+		if($_POST["tipo"]==1)
+			$canal = fopen("files/empresa.txt", "r");
+		
+		if($_POST["tipo"]==0)
+			$canal = fopen("files/personas.txt", "r");				
+		
+		
+		$user = $_POST["user"];
+		$pass = hash("sha512", $_POST["pass"]);
+
+		while(!feof($canal)){
+			$line = fgets($canal);
+			$datos = explode("|", $line);
+							
+			if($user==$datos[4] && $pass==$datos[5]){
+				$_SESSION["user_log"] = [$datos[1],$datos[4], $datos[2]];
+				$_SESSION["datos"] = [$datos[0], $datos[1]];
+				header("Location: index.php");
+			}
+		}
+
+		$errorLogin = "No existe ningun usuario con estos datos";
 	}
 ?>
 <!DOCTYPE html>
@@ -31,51 +57,19 @@
 				<input type="hidden" name="tipo" id="tipo">
 			</li>
 			<li><input type="button" name="login" id="entrar" value="Entrar"></li>
-		</ul>
+			<li class='error'><?= $errorLogin ?></li>
+		</ul>		
 		<p style="width: 300px;margin:0 auto;">
-			Empresa:<br>
+			<b>Empresa:</b><br>
 			fedex pass:123456<br>
 			fresh&co pass:123456<br>
 			idEE pass:123456<br><br>
-			personas:<br>
+			<b>personas:</b><br>
 			Alexxx pass:123456<br>
 			pepito pass:123456<br>
 			pepe pass:123456<br>
 			manuel pass:123456<br>
 		</p>		
 	</form>
-
-	<?php	
-		if($_POST)
-		{
-			if($_POST["tipo"]==1)
-			{
-				$canal = fopen("files/empresa.txt", "r");
-			}
-			if($_POST["tipo"]==0)
-			{
-				$canal = fopen("files/personas.txt", "r");				
-			}
-			
-			$user = $_POST["user"];
-			$pass = hash("sha512", $_POST["pass"]);
-
-			while(!feof($canal))
-			{
-				$line = fgets($canal);
-				$datos = explode("|", $line);
-								
-				if($user==$datos[4] && $pass==$datos[5])
-				{
-					$_SESSION["user_log"] = [$datos[1],$datos[4], $datos[2]];
-					$_SESSION["datos"] = [$datos[0], $datos[1]];
-					header("Location: index.php");
-				}
-			}
-
-			echo "<p class='error'>No existe ningun usuario con estos datos</p>";
-		}
-
-	?>
 </body>
 </html>

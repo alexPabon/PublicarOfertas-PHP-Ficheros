@@ -5,7 +5,7 @@
 		{
 ?>
 			<nav>
-				<a href="index.php">Inicio</a>
+				<a style="font-size: 30px;" href="index.php">Inicio</a>
 				<div class="user-items"><?php echo '<img class="img_perfil" src='.$_SESSION["user_log"][2].'>' ?></div>
 				<div class="user-items">
 					<p class="n_usu">Hola <?php echo $_SESSION["user_log"][1]; ?></p>
@@ -21,7 +21,7 @@
 		{
 ?>
 			<nav>
-				<a href="index.php">Inicio</a>
+				<a style="font-size: 30px;" href="index.php">Inicio</a>
 				<div class="user-items"><?php echo '<img class="img_perfil" src='.$_SESSION["user_log"][2].'>' ?></div>
 				<div class="user-items">
 					<p class="n_usu">Hola <?php echo $_SESSION["user_log"][1]; ?></p>

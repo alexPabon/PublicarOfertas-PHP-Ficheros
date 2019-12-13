@@ -42,7 +42,7 @@ if(isset($_POST["user"])){
 
 
         $dirPath = realpath(dirname(getcwd())); //C:\xampp\htdocs
-        $dirPath = $dirPath . '/' . 'proyecto/imagenes/user-image';
+        $dirPath = $dirPath . '/' . 'proyecto_final_Alexander/imagenes/user-image';
 
         if(!is_dir($dirPath)) mkdir($dirPath, 0755, true);
         $destPath = $dirPath . '/' . $newFileName;

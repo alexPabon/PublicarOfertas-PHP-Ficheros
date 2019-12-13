@@ -38,7 +38,14 @@
 					$ciudad = $datos[9];
 					$experiencia = str_replace("\r", "<br>", json_decode($datos[14]));
 
-					$infoCandidatos.= '<a href="curriculum.php?id='.$id.'"><p class="datosPersonales">'.$nombreApell.'<br><span class="fecha">'.$ciudad.'<br><br>Experiencia:<br></span class="experiencia"><br>'.substr($experiencia,0,150).'....</span></p></a>';
+					$infoCandidatos.= '<a href="curriculum.php?id='.$id.'">';
+						$infoCandidatos.= '<p class="datosPersonales">';
+							$infoCandidatos.= $nombreApell.'<br>';
+							$infoCandidatos.= '<b>'.$ciudad.'</b><br><br>';
+							$infoCandidatos.= '<b>Experiencia:</b><br>';
+							$infoCandidatos.= substr($experiencia,0,150).'<br>....';
+						$infoCandidatos.='</p>';
+					$infoCandidatos.='</a>';
 					
 			}						
     }

@@ -51,6 +51,7 @@
 		</div>
 		<div class="marco">
 			<div id="datos" class="pos_left">				
+				
 				<div id="foto" style="background-image: url(<?= $imagenP; ?>);"></div>
 				<p id="datosPers" class="informacion">
 					Email: <a href="mailto:<?php echo $correo; ?>"><?= $correo."<br>"; ?></a>

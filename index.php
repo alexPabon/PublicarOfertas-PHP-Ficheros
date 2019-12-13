@@ -2,7 +2,7 @@
 	session_start();
 	require_once "funciones/funciones.php";
 	$datosEmpresa = "";	
-
+	
 	if(isset($_SESSION["datos"])){
 
 		$usario = $_SESSION["datos"][1];

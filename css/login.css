@@ -46,8 +46,9 @@ input[class="log_int"]:hover
 	background-color: #c3e3efad;
 }
 
-p.error
-{
-	text-align: center;
+.error
+{	
+	color: red;
+	font-weight: bold;
 }
 
